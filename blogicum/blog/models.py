@@ -43,7 +43,6 @@ class Category(AbstracModel):
     class Meta:
         verbose_name = 'категория'
         verbose_name_plural = 'Категории'
-    
 
     def __str__(self):
         return self.title
@@ -59,7 +58,6 @@ class Location(AbstracModel):
     class Meta:
         verbose_name = 'местоположение'
         verbose_name_plural = 'Местоположения'
-    
 
     def __str__(self):
         return self.name
@@ -110,7 +108,6 @@ class Post(AbstracModel):
         verbose_name = 'публикация'
         verbose_name_plural = 'Публикации'
         ordering = ('-pub_date', )
-    
 
     def __str__(self):
         return self.title
